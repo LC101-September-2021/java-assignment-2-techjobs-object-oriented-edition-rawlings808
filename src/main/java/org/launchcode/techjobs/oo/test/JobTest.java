@@ -60,4 +60,10 @@ public class JobTest {
         Job testJobObjectTwo = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         assertFalse(testJobObjectOne.equals(testJobObjectTwo));
     }
+
+    @Test
+    public void checkToStringToSeeIfBlankLineBeforeAndAfterString(){
+//refer to line 56 on TestTaskFive.java
+    }
+
 }
