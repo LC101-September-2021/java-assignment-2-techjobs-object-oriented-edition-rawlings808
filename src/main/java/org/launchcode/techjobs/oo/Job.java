@@ -90,9 +90,7 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
-
-
-
-
-
+    public int getId() {
+        return id;
+    }
 }
