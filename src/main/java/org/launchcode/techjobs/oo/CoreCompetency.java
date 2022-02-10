@@ -22,11 +22,7 @@ public class CoreCompetency {
 
     @Override
     public String toString() {
-        if (value.isBlank()){
-            return "Data not available";
-        } else {
-            return value;
-        }
+        return value;
     }
 
     @Override

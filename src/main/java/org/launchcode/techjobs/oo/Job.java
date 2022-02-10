@@ -48,7 +48,29 @@ public class Job {
 
     @Override
     public String toString() {
-        return "\nID: " + this.id + "\nName: " + this.name + "\nEmployer: " + this.employer + "\nLocation: " + this.location + "\nPosition Type: " + this.positionType + "\nCore Competency: " + this.coreCompetency + "\n";
+//        return "\nID: " + this.id + "\nName: " + this.name + "\nEmployer: " + this.employer + "\nLocation: " + this.location + "\nPosition Type: " + this.positionType + "\nCore Competency: " + this.coreCompetency + "\n";
+        String name = this.name;
+        String employer = this.employer.toString();
+        String location = this.location.toString();
+        String positionType = this.positionType.toString();
+        String coreCompetency = this.coreCompetency.toString();
+
+        if (name.isBlank()){
+            name = "Data not available";
+        }
+        if (employer.isBlank()){
+            employer = "Data not available";
+        }
+        if (location.isBlank()){
+            location = "Data not available";
+        }
+        if (positionType.isBlank()){
+            positionType = "Data not available";
+        }
+        if (coreCompetency.isBlank()){
+            coreCompetency = "Data not available";
+        }
+        return "\nID: " + this.id + "\nName: " + name + "\nEmployer: " + employer + "\nLocation: " + location + "\nPosition Type: " + positionType + "\nCore Competency: " + coreCompetency + "\n";
     }
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
