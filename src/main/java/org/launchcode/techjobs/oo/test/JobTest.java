@@ -31,8 +31,9 @@ public class JobTest {
         Job testJobOne = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         Job testJobTwo = new Job("Web Developer", new Employer("LaunchCode"), new Location("St. Louis"), new PositionType("Front-end developer"), new CoreCompetency("JavaScript"));
 //        System.out.println(testJobOne.getId() + "\n" + testJobTwo.getId());
-        assertFalse(testJobOne.equals(testJobTwo));
-
+//        assertFalse(testJobOne.equals(testJobTwo));
+//        System.out.println(testJobTwo.getId()-testJobOne.getId());
+        assertEquals(1, testJobTwo.getId()-testJobOne.getId());
 
     }
 
